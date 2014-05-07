@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'gmaps4rails'
+gem 'mysql2'
