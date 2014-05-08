@@ -3,8 +3,12 @@ class WelcomeController < ApplicationController
   	
   end
   
-  def updates 
+  def list 
   
   end 
+  
+  def info
+  
+  end
   
 end
