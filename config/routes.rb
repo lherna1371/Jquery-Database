@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index' #index and profile view
   
+  get '/user' => 'user#profile', as: :user_profile
   get '/user/notification' => 'user#notification', as: :notification # notification view
   get '/user/settings' => 'user#settings', as: :user_settings #user selects preferences and edits editable user fields 
   

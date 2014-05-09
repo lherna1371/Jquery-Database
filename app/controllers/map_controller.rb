@@ -1,8 +1,4 @@
 class MapController < ApplicationController
-
-  def map_view
-  	
-  end
   
   def list_view 
   
