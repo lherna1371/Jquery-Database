@@ -3,12 +3,4 @@ class WelcomeController < ApplicationController
   	
   end
   
-  def list 
-  
-  end 
-  
-  def info
-  
-  end
-  
 end
