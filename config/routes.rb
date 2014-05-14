@@ -3,19 +3,16 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index' #index and profile view
+  root 'welcome#index' #index and map view
   
   get '/user' => 'user#profile', as: :user_profile
   get '/user/notification' => 'user#notification', as: :notification # notification view
   get '/user/settings' => 'user#settings', as: :user_settings #user selects preferences and edits editable user fields 
   
-  get '/map' => 'map#map_view', as: :map_view  #map view
   get '/map/list' => 'map#list_view', as: :map_list_view #map list view 
   
   get '/partner' => 'partner#index', as: :partner_list #list of partners
   get '/partner/info' => 'partner#show', as: :partner_show_individual #view partner profile
-  
-  get '/map/listing' => 'map#listing', as: :map_listing #view of map listings that partners would like to promote 
   
   
   # Example of regular route:

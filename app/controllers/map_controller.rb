@@ -4,9 +4,5 @@ class MapController < ApplicationController
   
   end 
  
-  def listing 
-  
-  end 
- 
   
 end
