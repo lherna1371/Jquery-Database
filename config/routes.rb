@@ -15,6 +15,15 @@ Rails.application.routes.draw do
   get '/partner/info' => 'partner#show', as: :partner_show_individual #view partner profile
   
   
+  
+  
+  get '/admin/create_partner' => 'admin#create_partner', as: :create_partner #allow admin to create partners 
+  
+  get '/partner/login' => 'partner#login', as: :partner_login #login for partner, will be required to login prior to creating activity 
+  get '/partner/create_activity' => 'partner#create_activity', as: :create_activity #allow partners to create activities
+  post '/partner/create_activity_new' => 'partner#create_activity_new', as: :create_activity_new #allow partners to create activities
+  
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

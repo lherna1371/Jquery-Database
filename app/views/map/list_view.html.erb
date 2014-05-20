@@ -5,15 +5,9 @@
     </div>
 	<div role="main" class="ui-content">
 		<ul data-role="listview" data-filter="true" data-filter-placeholder="Find location..." data-filter-theme="a" data-inset="true">
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location1</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location2</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location3</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location4</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location5</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location6</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location7</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location8</h2><p>this is sample text that can be displayed on each li.</p></a></li>
-		    <li><a href="url"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2>Location9</h2><p>this is sample text that can be displayed on each li.</p></a></li>
+			<% @activity_list.each do |activity| %>
+		    <li><a href="<% activity.web %>"><img alt="alt..." src="http://m1.behance.net/rendition/modules/23112153/disp/ae3e95175b244454f5a4fb74d14bc42a.jpg" /><h2><%= activity.name%></h2><p><%= activity.description %></p></a></li>
+		    <% end %>
 		</ul>
 	</div>
     <div data-role="footer" data-theme="a">

@@ -1,0 +1,99 @@
+
+<div data-role="page">
+    <div data-role="header" data-theme="a">
+    	<h1>Create Activity</h1>
+    </div>
+	<div role="main" class="ui-content">
+	<form role="form" action="/partner/create_activity_new" method="post">
+	  <div class="col-md-6">
+	  	<h3>Activity Description:</h3>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Activity Name</label>
+		    <input type="text" class="form-control" name="activity_name" placeholder="" required="required">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Address</label>
+		    <input type="text" class="form-control" name="address">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">City</label>
+		    <select name="constituent">
+			  <option value="chicago">Chicago</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">State</label>
+		    <select name="constituent">
+			  <option value="illinois">IL</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Zip</label>
+		    <input type="text" class="form-control" name="zip">
+		  </div>
+	  </div>
+	  <div class="col-md-6">
+	  	  <div class="form-group">
+		    <label for="exampleInputPassword1">Latitude</label>
+		    <input type="text" class="form-control" name="latitude" placeholder="">
+		  </div>
+	  	  <div class="form-group">
+		    <label for="exampleInputPassword1">Longitude</label>
+		    <input type="text" class="form-control" name="longitude" placeholder="">
+		  </div>
+		  <div class="form-group">
+		    <label>Category</label>
+		    <select name="category">
+			  <option value="1">Education</option>
+			  <option value="2">Health</option>
+			  <option value="3">Community</option>
+			</select>
+		  </div>
+	  	  <div class="form-group">
+		    <label>Web Address</label>
+		    <input type="text" class="form-control" name="web_address" placeholder="">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Start Time</label>
+		    <input type="date" class="form-control" name="start_time" placeholder="">
+		  </div>
+		  <div class="form-group">
+		    <label>End Time</label>
+		    <input type="date" class="form-control" name="end_time" placeholder="">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Description</label>
+		    <textarea class="form-control" name="description" placeholder="" rows="5"></textarea>
+		  </div>
+	  </div>
+	  <div class="col-md-6">
+	  	<h3>Individual Contact Information:</h3>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">First Name</label>
+		    <input type="text" class="form-control" name="first_name" placeholder="" required="required">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Last Name</label>
+		    <input type="text" class="form-control" name="last_name" placeholder="" required="required">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Phone</label>
+		    <input type="text" class="form-control" name="phone" placeholder="" required="required">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Email</label>
+		    <input type="text" class="form-control" name="email" placeholder="" required="required">
+		  </div>
+	  </div>
+	  <div class="col-xs-12">
+	  	<button type="submit" class="btn btn-success">Submit</button>
+	  </div>
+	</form>
+	</div>
+    <div data-role="footer" data-theme="a">
+    </div>
+</div>
+
+
+
+
