@@ -21,7 +21,7 @@
 
 
 $( document ).ready(function() {
-	alert("Hello! Map page is loading!!");
+
     var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
     if ( navigator.geolocation ) {
         function success(pos) {
@@ -54,7 +54,7 @@ $( document ).ready(function() {
             position: latlng,
             animation: google.maps.Animation.BOUNCE,
             map: map,
-            icon: "/assets/robbery.png",
+            icon: "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-366116804000/robbery.png",
       
         });
         
