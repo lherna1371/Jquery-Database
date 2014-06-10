@@ -22,19 +22,37 @@
 
 $( document ).ready(function() {
 
+	Array.prototype.contains = function(k) {
+	  for(var i=0; i < this.length; i++){
+	    if(this[i] === k){
+	      return true;
+	    }
+	  }
+	  return false;
+	}
 
 	var toLoad = [];
     $("input[type=checkbox]").each(function(){
       
       $(this).bind("click", function(){ 
-      	
-      	if ($(this).is(':checked')) {
-      		toLoad.push($(this).attr("id"))
-/* 	  		console.log(toLoad) */
-	  	} else {
-		  	toLoad.pop($(this).attr("id"))
-/* 		  	console.log(toLoad) */
-	  	}
+      		console.log($(this).attr("id"))
+	  		var toEdit = $(this).attr("id")
+	  		console.log(toEdit)
+      		if (toLoad.contains(toEdit) == true) {
+	      		console.log("IT DOES CONTAIN IT")
+	      		var itsMe = toLoad.indexOf(toEdit)
+				if(itsMe!=-1){
+				
+				   toLoad.splice(itsMe, 1);
+				}
+	      		console.log(toLoad)
+      		} else if (toLoad.contains(toEdit) == false){
+	      		console.log("IT DOES NOT CONTAIN IT")
+	      		toLoad.push(toEdit)
+	      		console.log(toLoad)
+      		}
+
+
         $.ajax({
             url: '/',
             type: 'GET',
